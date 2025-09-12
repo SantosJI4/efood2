@@ -32,6 +32,9 @@ export const ModalContent = styled.div`
   position: relative;
   z-index: 1;
   display: flex;
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
 
   header {
     margin-right: 24px;

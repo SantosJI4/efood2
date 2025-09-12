@@ -4,9 +4,10 @@ import { cores } from '../../styles'
 export const Imagem = styled.div`
   width: 100%;
   height: 186px;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
+  justify-items: center;
   padding: 0 32px;
 `
 
