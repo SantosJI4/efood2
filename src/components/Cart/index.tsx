@@ -7,7 +7,7 @@ import {
   SideBar,
   Prices,
   Title,
-  Lixeira,
+  TrashCan,
   CartItem
 } from './styles'
 import Checkout from '../Checkout'
@@ -32,7 +32,7 @@ const Cart = () => {
       dispatch(openOrder())
     } else {
       closeCart()
-      alert('Seu carrinho está vazio')
+      alert('Seu carrinho está vazio! Vamos a compras')
     }
   }
 
@@ -63,7 +63,7 @@ const Cart = () => {
                 <span>{formataPreco(item.preco)}</span>
               </div>
               <button type="button" onClick={() => removeItem(item.id)}>
-                <Lixeira src={lixeira} alt="Remover item do carrinho" />
+                <TrashCan src={lixeira} alt="Remover item do carrinho" />
               </button>
               {item.quantidade > 1 && <Quantity>{item.quantidade}x</Quantity>}
             </CartItem>
@@ -73,7 +73,7 @@ const Cart = () => {
           <p>Valor total:</p>
           <p>{formataPreco(getTotalPrice())}</p>
         </Prices>
-        <BotaoCart onClick={abrirPedido}>Continuar com a entrega</BotaoCart>
+        <BotaoCart onClick={abrirPedido}>Continuar</BotaoCart>
       </SideBar>
     </CartContainer>
   )

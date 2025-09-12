@@ -87,8 +87,10 @@ button {
       background: none;
       box-shadow: none;
     }
+}
 `
-export const Lixeira = styled.img`
+
+export const TrashCan = styled.img`
   cursor: pointer;
   width: 16px;
   height: 16px;
