@@ -6,10 +6,15 @@ export const ContainerFood = styled.div`
   width: 100%;
   background-color: ${cores.rosa};
   cursor: pointer;
-  height: 338px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
 
   div {
+    flex: 1;
     padding: 8px;
+    display: flex;
+    flex-direction: column;
   }
 `
 
@@ -33,9 +38,10 @@ export const DescriptionFood = styled.p`
   font-weight: 400;
   line-height: 22px;
   padding-bottom: 8px;
+  flex: 1;
 `
 export const StyledButton = styled.button`
-  width: 304px;
+  width: 100%;
   height: 24px;
   background-color: ${cores.bege};
   color: ${cores.rosa};
@@ -51,4 +57,5 @@ export const StyledButton = styled.button`
   justify-content: center;
 
   border: none;
+  margin-top: auto;
 `

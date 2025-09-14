@@ -28,16 +28,12 @@ export default function Food({
 }: FoodProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
-  const limitarDescricao = (descricao: string) => {
-    return descricao.length > 150 ? descricao.slice(0, 150) + '...' : descricao
-  }
-
   return (
     <ContainerFood>
       <ImagemFood src={foto} />
       <div>
         <TitleFood>{nome}</TitleFood>
-        <DescriptionFood>{limitarDescricao(descricao)}</DescriptionFood>
+        <DescriptionFood>{descricao}</DescriptionFood>
         <StyledButton onClick={() => setModalIsOpen(true)}>
           Adicionar ao carrinho{' '}
         </StyledButton>
@@ -57,3 +53,4 @@ export default function Food({
     </ContainerFood>
   )
 }
+
