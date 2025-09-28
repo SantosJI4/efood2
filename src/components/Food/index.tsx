@@ -28,6 +28,7 @@ export default function Food({
 }: FoodProps) {
   const [modalIsOpen, setModalIsOpen] = useState(false)
 
+
   return (
     <ContainerFood>
       <ImagemFood src={foto} />
@@ -53,4 +54,3 @@ export default function Food({
     </ContainerFood>
   )
 }
-

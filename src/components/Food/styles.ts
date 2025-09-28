@@ -2,60 +2,52 @@ import styled from 'styled-components'
 import { cores } from '../../styles'
 
 export const ContainerFood = styled.div`
-  max-width: 320px;
-  width: 100%;
-  background-color: ${cores.rosa};
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; 
-
-  div {
-    flex: 1;
     padding: 8px;
+    background-color: ${cores.rosa};
+    width: 320px;
+    height: 100%;
     display: flex;
     flex-direction: column;
-  }
+    box-sizing: border-box;
+
+    
+    > div {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        min-height: 0; 
+    }
 `
 
 export const ImagemFood = styled.img`
-  display: block;
-  margin: 0 auto;
-  width: 100%;
+  width: 304px;
   height: 167px;
-  object-fit: cover;
-  padding: 8px;
+  margin-bottom: 8px;
 `
 
 export const TitleFood = styled.h4`
-  font-size: 16px;
-  font-weight: 900;
-  padding-bottom: 8px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 8px;
+    color: ${cores.bege};
 `
 
 export const DescriptionFood = styled.p`
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
-  padding-bottom: 8px;
-  flex: 1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: ${cores.bege};
+    margin-bottom: 8px;
 `
 export const StyledButton = styled.button`
-  width: 100%;
-  height: 24px;
-  background-color: ${cores.bege};
-  color: ${cores.rosa};
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0;
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: none;
-  margin-top: auto;
+    background-color: ${cores.bege};
+    color: ${cores.rosa};
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    padding: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: auto;
 `

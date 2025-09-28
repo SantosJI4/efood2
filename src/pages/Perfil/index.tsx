@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom'
 import Cart from '../../components/Cart'
 import type { CardapioItem, Restaurants } from '../../pages/Home'
 
+
 const Perfil = () => {
   const [restaurante, setRestaurante] = useState<Restaurants | null>(null)
   const { id } = useParams()

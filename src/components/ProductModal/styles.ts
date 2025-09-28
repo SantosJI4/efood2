@@ -30,11 +30,9 @@ export const ModalContent = styled.div`
   background-color: ${cores.rosa};
   padding: 32px;
   position: relative;
+  width: 1024px;
   z-index: 1;
   display: flex;
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
 
   header {
     margin-right: 24px;

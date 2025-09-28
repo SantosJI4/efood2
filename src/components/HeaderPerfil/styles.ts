@@ -4,17 +4,26 @@ import { cores } from '../../styles'
 export const Imagem = styled.div`
   width: 100%;
   height: 186px;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
   align-items: center;
-  justify-items: center;
-  padding: 0 32px;
+  justify-content: center;
+
+  > div {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center;
+    gap: 16px;
+  }
 `
 
 export const Text = styled.h3`
   font-size: 18px;
   font-weight: 900;
   color: ${cores.rosa};
+  justify-self: start; /* alinha à esquerda dentro do grid */
+  text-align: left;
 `
 
 export const Banner = styled.div`
@@ -23,13 +32,14 @@ export const Banner = styled.div`
   color: ${cores.branco};
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
 `
 
 export const TextBanner = styled.p`
-  padding-top: 25px;
   font-size: 32px;
   font-weight: 100;
-  padding-bottom: 152px;
+  margin: 0 0 8px;
 `
 
 export const RestaurantName = styled.p`
@@ -42,6 +52,8 @@ export const Cart = styled.h3`
   font-weight: 900;
   font-size: 18px;
   color: ${cores.rosa};
+  justify-self: end; /* alinha à direita dentro do grid */
+  text-align: right;
   &:hover {
     text-decoration: underline;
   }

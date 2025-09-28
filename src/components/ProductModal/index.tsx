@@ -47,9 +47,10 @@ const ProductModal = ({
     onClose()
   }
 
+
   return (
     <S.ModalContainer className={isOpen ? 'is-visible' : ''}>
-      <S.ModalContent className="container">
+      <S.ModalContent>
         <img src={close} alt="Fechar" onClick={onClose} />
         <header>
           <img src={photo} alt={name} />
